@@ -15,6 +15,7 @@ namespace Testing_JSON
 {
     public partial class _Default : Page
     {
+        private string city;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -28,10 +29,14 @@ namespace Testing_JSON
         protected void submiturlbtn_clicked(object sender, EventArgs e)
         {
             // Stream response;
+            if(urlinputbox.Value!="")
+                 city = urlinputbox.Value.ToString();
+            else if(conditionText.Value!="")
+                city = conditionText.Value.ToString();
             try
             {
                 WebClient wc = new WebClient();
-                string download="http://api.openweathermap.org/data/2.5/weather?q="+urlinputbox.Value.ToString()+"&units=metric";
+                string download="http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric";
                 string json = wc.DownloadString(download);
                 
 

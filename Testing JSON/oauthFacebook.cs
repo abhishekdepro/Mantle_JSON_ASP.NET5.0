@@ -13,7 +13,7 @@ namespace Testing_JSON
         public enum Method { GET, POST };
         public const string AUTHORIZE = "https://graph.facebook.com/oauth/authorize";
         public const string ACCESS_TOKEN = "https://graph.facebook.com/oauth/access_token";
-        public const string CALLBACK_URL = "http://localhost:40260/Callback.aspx";
+        public const string CALLBACK_URL = "http://mantle.apphb.com/Callback.aspx";
 
         private string _consumerKey = "";
         private string _consumerSecret = "";

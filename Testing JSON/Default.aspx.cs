@@ -82,7 +82,7 @@ namespace Testing_JSON
                 weathercondition.Text = "Weather Condition: ";
                 weathercondition.Text += final[2].temp.ToUpper();
                 conditionText.Value = final[2].temp;
-
+               /// submiturlbtn.Visible = false;
                 show();
             }
             catch (Exception ex) {

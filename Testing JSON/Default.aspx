@@ -5,7 +5,7 @@
 
     <div class="jumbotron">
         <h1>Mantle</h1>
-        <p class="lead">An opensource framework for predicting weather data.<p><a href="http://www.asp.net" class="btn btn-primary">Learn more &raquo;</a></p>
+        <p class="lead">An opensource framework for predicting weather data.<p><a href="https://github.com/abhishekdepro/Mantle_JSON_ASP.NET5.0/" class="btn btn-primary">Learn more &raquo;</a></p>
     </div>
 
     <div class="row">

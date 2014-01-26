@@ -42,5 +42,11 @@ namespace Testing_JSON.Account
                 }
             }
         }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            oAuthFacebook oFB = new oAuthFacebook();
+            Response.Redirect(oFB.AuthorizationLinkGet());
+        }
     }
 }

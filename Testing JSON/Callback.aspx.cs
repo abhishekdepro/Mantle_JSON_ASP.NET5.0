@@ -39,7 +39,7 @@ namespace Testing_JSON
 
                     
                     
-                    url = "https://graph.facebook.com/me?access_token=CAADBZAtilqtYBAIlTDFPZB2ZCesskF2PBYVw2jbPiswOsOvQqjQgnWSydUWs4ghR1vrRThNYHAkRJvvfuQlW0AEINzyXJTFQNTBpZAMJRUJUflVWrEiJHrRkg5dxkm2oTyi3SMi5Ds4wrdOzIHZAcSljD8EDpvS4n0vAhkGqFU4IJ4QMdUamMgLekK7x6GnlT4BMM1WqwcQZDZD";
+                    url = "https://graph.facebook.com/me?access_token="+oAuth.Token;
                     string json = oAuth.WebRequest(oAuthFacebook.Method.GET, url, String.Empty);
                     Storage storage = storageService.InsertJSONDocument(dbName, collectionName, json);
                     IList<Storage.JSONDocument> jsonDocList = storage.GetJsonDocList();

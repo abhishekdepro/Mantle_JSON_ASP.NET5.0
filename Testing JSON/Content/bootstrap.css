@@ -4938,7 +4938,7 @@ a.list-group-item.active > .badge,
   background-position: right;
   background-repeat:no-repeat;
   background-size:200px;
-  background-image:url('icon.png');
+  background-image:url('rain.svg');
 }
 
 .jumbotron p {

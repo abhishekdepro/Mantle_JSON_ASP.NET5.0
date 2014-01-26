@@ -158,6 +158,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\galaxy.jpg" />
     <Content Include="Content\icon.png" />
+    <Content Include="Content\rain.svg" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />

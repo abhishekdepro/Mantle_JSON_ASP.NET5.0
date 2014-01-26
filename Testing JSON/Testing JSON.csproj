@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="App42_CSHARP_SDK_1.9.1">
+      <HintPath>..\..\..\..\..\Desktop\App42_CSHARP_SDK-master\1.9.1\App42_CSHARP_SDK_1.9.1.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />

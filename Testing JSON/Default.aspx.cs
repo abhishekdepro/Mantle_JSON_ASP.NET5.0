@@ -10,20 +10,32 @@ using System.IO;
 using System.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using com.shephertz.app42.paas.sdk.csharp;
+using com.shephertz.app42.paas.sdk.csharp.storage;  
 
 namespace Testing_JSON
 {
     public partial class _Default : Page
     {
+          
         private string city;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         public void show()
         {
-
+            ServiceAPI api = new ServiceAPI("f42895e1dbf7b92624e65c952537e07c3d973cb3888a16b21372835d5feac400", "a0a31095a5b969a4b35b3092cfb3344f73161299277cb2881d5c957e27df0969");
+            StorageService storageService = api.BuildStorageService();
+            //{\"name\":\"Nick\",\"age\":30,
+            String dbName = "user";
+            String collectionName = "data";
+            String json = "{\"name\":\""+city+"\",\"age\":\""+conditionText.Value+"\",\"phone\":\""+urlinputbox.Value+"\"}"; 
+            Storage storage = storageService.InsertJSONDocument(dbName, collectionName, json);
+            
+            IList<Storage.JSONDocument> jsonDocList = storage.GetJsonDocList();
+              
         }
 
         protected void submiturlbtn_clicked(object sender, EventArgs e)
@@ -70,6 +82,8 @@ namespace Testing_JSON
                 weathercondition.Text = "Weather Condition: ";
                 weathercondition.Text += final[2].temp.ToUpper();
                 conditionText.Value = final[2].temp;
+
+                show();
             }
             catch (Exception ex) {
                 

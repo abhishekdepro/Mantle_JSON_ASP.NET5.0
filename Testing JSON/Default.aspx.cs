@@ -21,7 +21,9 @@ namespace Testing_JSON
         private string city;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Weather.Flag != 0)
+                urlinputbox.Value = Session["location"].ToString();
+
         }
 
         public void show()

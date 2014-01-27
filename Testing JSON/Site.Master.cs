@@ -44,6 +44,7 @@ namespace Testing_JSON
                 Response.Cookies.Set(responseCookie);
             }
 
+            
             Page.PreLoad += master_Page_PreLoad;
         }
 
@@ -52,8 +53,12 @@ namespace Testing_JSON
             if (!IsPostBack)
             {
                 // Set Anti-XSRF token
+                Session["username"] = "";
                 ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
-                ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
+                if(Session["username"].ToString()=="")
+                    ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
+                else
+                    ViewState[AntiXsrfUserNameKey]= Session["username"].ToString();
             }
             else
             {

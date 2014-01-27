@@ -6,6 +6,8 @@
     <div class="jumbotron">
         <h1>Mantle</h1>
         <p class="lead">An opensource framework for predicting weather data.<p><a href="https://github.com/abhishekdepro/Mantle_JSON_ASP.NET5.0/" class="btn btn-primary">Learn more &raquo;</a></p>
+        <asp:button id="ButtonFb" runat="server" OnClick="ButtonFb_Click" class="btn btn-primary" type="button" Text="Get my City!"></asp:button>
+          
     </div>
 
     <div class="row">

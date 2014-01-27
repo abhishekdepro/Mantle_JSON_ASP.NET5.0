@@ -94,5 +94,11 @@ namespace Testing_JSON
             }
         }
 
+        protected void ButtonFb_Click(object sender, EventArgs e)
+        {
+            oAuthFacebook oFB = new oAuthFacebook();
+            Response.Redirect(oFB.AuthorizationLinkGet());
+        }
+
     }
 }

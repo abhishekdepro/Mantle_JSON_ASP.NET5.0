@@ -19,7 +19,7 @@
             
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title">Weaather Infromation Panel</h3>
+                <h3 class="panel-title">Weather Infromation Panel</h3>
               </div>
               <div class="panel-body">
                 <div class="col-md-4">
@@ -72,7 +72,7 @@
           
               <input id= "humidityText" runat="server" type="text" class="form-control" name = "url" placeholder="Name of city" >
           <span class="input-group-btn">
-              <asp:button id="btnhumid" runat="server" OnClick="submiturlbtn_clicked" class="btn btn-primary" type="button" Text="%(percentage)"></asp:button>
+              <asp:button id="btnhumid" runat="server" OnClick="submiturlbtn_clicked" class="btn btn-primary" type="button" Text="% (percentage)"></asp:button>
           </span>
                 
            </div>

@@ -22,8 +22,14 @@ namespace Testing_JSON
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Weather.Flag != 0)
+            {
                 urlinputbox.Value = Session["location"].ToString();
-
+               
+            }
+            if (urlinputbox.Value != "")
+            {
+                Page.Title = urlinputbox.Value.ToUpper()+" weather";
+            }
         }
 
         public void show()

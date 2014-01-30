@@ -12,7 +12,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/icon.ico" rel="shortcut icon" type="image/x-icon" />
     <script type="text/javascript" src="Scripts/plugins/jqplot.barRenderer.js"></script>
 <script type="text/javascript" src="Scripts/plugins/jqplot.categoryAxisRenderer.min.js"></script>
 <script type="text/javascript" src="Scripts/plugins/jqplot.pointLabels.min.js"></script>

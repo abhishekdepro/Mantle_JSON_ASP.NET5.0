@@ -60,7 +60,7 @@ namespace Testing_JSON
                                 .Cast<JObject>()
                                 
                                 .ToList();
-                var temperature = jObj["main"].Children()
+                var weather = jObj["main"].Children()
                                 .Cast<JProperty>()
 
 
@@ -80,10 +80,11 @@ namespace Testing_JSON
 
                                 }).ToList();
                 
-                urlinputbox.Value = temperature[0].resultquery;
+                urlinputbox.Value = weather[0].resultquery;
                 weathercondition.Text = "Weather Condition: ";
                 weathercondition.Text += final[2].temp.ToUpper();
                 conditionText.Value = final[2].temp;
+                humidityText.Value = weather[2].resultquery;
                /// submiturlbtn.Visible = false;
                 show();
             }

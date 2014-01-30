@@ -2,17 +2,28 @@
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    
     <div class="jumbotron">
         <h1>Mantle</h1>
-        <p class="lead">An opensource framework for predicting weather data.<p><a href="https://github.com/abhishekdepro/Mantle_JSON_ASP.NET5.0/" class="btn btn-primary">Learn more &raquo;</a></p>
-        <asp:button id="ButtonFb" runat="server" OnClick="ButtonFb_Click" class="btn btn-primary" type="button" Text="Get my City!"></asp:button>
-          
+        <p class="lead">An opensource framework for predicting weather data.<br /><asp:button id="ButtonFb" runat="server" OnClick="ButtonFb_Click" class="btn btn-primary" type="button" Text="Get my City!"></asp:button>
+          </p>
+        
     </div>
 
     <div class="row">
-        <div class="col-md-4">
-            <h2>City Temperature</h2>
+        
+        <br />
+        <div class="col-md-12">
+            
+            <br />
+            
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Weaather Infromation Panel</h3>
+              </div>
+              <div class="panel-body">
+                <div class="col-md-4">
+            <h2>Temperature</h2>
             
             <div id="input-collection" class="input-group input-group-lg">
           
@@ -47,10 +58,29 @@
           
               <input id= "Text2" runat="server" type="text" class="form-control" name = "url" placeholder="Name of city" disabled="disabled">
           <span class="input-group-btn">
-              <asp:button id="Button3" runat="server" OnClick="submiturlbtn_clicked" class="btn btn-primary" type="button" Text="cm Rainfall"></asp:button>
+              <asp:button id="btnhumi" runat="server" OnClick="submiturlbtn_clicked" class="btn btn-primary" type="button" Text="cm Rainfall"></asp:button>
           </span>
                 
            </div>
+            
+        
+        </div>
+                   <div class="col-md-4">
+            <h2>Humidity</h2>
+            
+            <div id="input-collection" class="input-group input-group-lg">
+          
+              <input id= "humidityText" runat="server" type="text" class="form-control" name = "url" placeholder="Name of city" >
+          <span class="input-group-btn">
+              <asp:button id="btnhumid" runat="server" OnClick="submiturlbtn_clicked" class="btn btn-primary" type="button" Text="%(percentage)"></asp:button>
+          </span>
+                
+           </div>
+            
+        
+        </div>
+              </div>
+            </div>
             
         
         </div>
@@ -73,6 +103,8 @@
                 <asp:label id="error" runat="server" Text="Error Message:"></asp:label>
              
                           </div>
+           
+           
                 
         </div>
     </div>

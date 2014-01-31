@@ -26,6 +26,7 @@ namespace Testing_JSON
                 urlinputbox.Value = Session["location"].ToString();
                
             }
+            
             if (urlinputbox.Value != "")
             {
                 Page.Title = urlinputbox.Value.ToUpper()+" weather";

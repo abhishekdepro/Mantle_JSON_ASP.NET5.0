@@ -85,12 +85,13 @@ namespace Testing_JSON
                                     temp = (string)x.Value,
 
                                 }).ToList();
-                
+
+                var humidity = jObj["main"]["humidity"];
                 urlinputbox.Value = weather[0].resultquery;
                 weathercondition.Text = "Weather Condition: ";
                 weathercondition.Text += final[2].temp.ToUpper();
                 conditionText.Value = final[2].temp;
-                humidityText.Value = weather[2].resultquery;
+                humidityText.Value = humidity.ToString();
                /// submiturlbtn.Visible = false;
                 show();
             }

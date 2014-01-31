@@ -88,6 +88,7 @@ namespace Testing_JSON
                                 }).ToList();
 
                 var humidity = jObj["main"]["humidity"];
+                var temperature = jObj["main"]["temp_min"];
                //code to check if rain node exists in JSON doc.
                 var rainnodecheck = jObj.Property("rain");
                //routine to typecast if rain is present
@@ -107,6 +108,22 @@ namespace Testing_JSON
                 weathercondition.Text += final[2].temp.ToUpper();
                 conditionText.Value = final[2].temp;
                 humidityText.Value = humidity.ToString();
+                if (Convert.ToInt32(humidity) > 80 || Convert.ToInt32(humidity) < 30)
+                {
+                    Asthma.condition = "severe";
+
+                }
+                
+                else if (Convert.ToInt32(temperature) < 12)
+                {
+                        Asthma.condition = "poor";
+               }
+                else
+                {
+                    Asthma.condition = "Absolutely FINE";
+                }
+               // asthmaCondition.Text = " ";
+                asthmaCondition.Text += Asthma.condition + " for " + DateTime.Now.ToString("dd-MMM-yyyy");
                ///submiturlbtn.Visible = false;
                 show();
             }

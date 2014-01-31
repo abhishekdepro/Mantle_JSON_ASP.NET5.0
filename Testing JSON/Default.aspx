@@ -3,6 +3,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
+  
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server"><ContentTemplate>    
     <div class="jumbotron">
         <h1>Mantle</h1>
         <p class="lead">An opensource framework for predicting weather data.<br /><asp:button id="ButtonFb" runat="server" OnClick="ButtonFb_Click" class="btn btn-primary" type="button" Text="Get my City!"></asp:button>
@@ -27,7 +29,7 @@
             
             <div id="input-collection" class="input-group input-group-lg">
           
-              <input id= "urlinputbox" runat="server" type="text" class="form-control" name = "url" placeholder="Name of city">
+              <input id= "urlinputbox" runat="server" type="text" class="form-control"  autocomplete="on" name  = "url" placeholder="Name of city">
           <span class="input-group-btn">
               <asp:button id="submiturlbtn" runat="server" OnClick="submiturlbtn_clicked" class="btn btn-primary" type="button" Text="° Celcius"></asp:button>
           </span>
@@ -85,10 +87,30 @@
         
         </div>
     </div>
-    <br />
+    
+    <div class="row">
+        
+        
+        <div class="col-md-12">
+            
+            
+            
+            
+                    
+                   
+                       <div class="bs-callout bs-callout-info" id="bottom">
+                           <asp:label id="asthmaCondition" runat="server" Text="For ASTHMA patients:"></asp:label>
+                       </div>
+                
+        </div> 
+
+              
+            
+    </div>
+    
     <div class="row">
         <div class="col-md-6">
-            <div class="alert alert-info">
+            <div class="bs-callout bs-callout-info">
                 
                 <asp:label id="weathercondition" runat="server" Text="Weather Condition:"></asp:label>
              
@@ -98,7 +120,7 @@
     
     
         <div class="col-md-6">
-            <div class="alert alert-danger">
+            <div class="bs-callout bs-callout-danger">
                 
                 <asp:label id="error" runat="server" Text="Error Message:"></asp:label>
              
@@ -108,4 +130,6 @@
                 
         </div>
     </div>
+            </ContentTemplate>
+            </asp:UpdatePanel>
 </asp:Content>

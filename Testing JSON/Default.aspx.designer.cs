@@ -13,6 +13,15 @@ namespace Testing_JSON {
     public partial class _Default {
         
         /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// ButtonFb control.
         /// </summary>
         /// <remarks>
@@ -92,6 +101,15 @@ namespace Testing_JSON {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnhumid;
+        
+        /// <summary>
+        /// asthmaCondition control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label asthmaCondition;
         
         /// <summary>
         /// weathercondition control.

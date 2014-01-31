@@ -9,7 +9,7 @@ namespace Testing_JSON
     {
         
         
-        public static int Flag=0;
+        public int Flag=0;
         public string link{get; set;}
         public string locale{get; set;}
         public string updated_time{get; set;}

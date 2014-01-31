@@ -69,7 +69,8 @@ namespace Testing_JSON
 
 
                     Session["location"] = temperature[1].resultquery;
-                    Weather.Flag = 1;
+                    Weather weather=new Weather();
+                    weather.Flag = 1;
                     //int age = user.Age;
                     Response.Redirect("Default.aspx");
                     

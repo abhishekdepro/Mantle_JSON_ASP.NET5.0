@@ -19,9 +19,10 @@ namespace Testing_JSON
     {
           
         private string city;
+        Weather flag = new Weather();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Weather.Flag != 0)
+            if (flag.Flag != 0)
             {
                 if (Session["location"].ToString()!="")
                 {

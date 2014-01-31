@@ -23,8 +23,10 @@ namespace Testing_JSON
         {
             if (Weather.Flag != 0)
             {
-                urlinputbox.Value = Session["location"].ToString();
-               
+                if (Session["location"].ToString()!="")
+                {
+                    urlinputbox.Value = Session["location"].ToString();
+                }
             }
             
             if (urlinputbox.Value != "")

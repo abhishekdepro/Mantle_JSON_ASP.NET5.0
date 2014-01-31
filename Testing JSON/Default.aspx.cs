@@ -90,7 +90,7 @@ namespace Testing_JSON
                 weathercondition.Text = "Weather Condition: ";
                 weathercondition.Text += final[2].temp.ToUpper();
                 conditionText.Value = final[2].temp;
-                humidityText.Value = weather[2].resultquery;
+                humidityText.Value = weather[4].resultquery;
                /// submiturlbtn.Visible = false;
                 show();
             }

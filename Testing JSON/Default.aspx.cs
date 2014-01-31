@@ -40,7 +40,7 @@ namespace Testing_JSON
             //{\"name\":\"Nick\",\"age\":30,
             String dbName = "user";
             String collectionName = "data";
-            String json = "{\"name\":\""+city+"\",\"age\":\""+conditionText.Value+"\",\"phone\":\""+urlinputbox.Value+"\"}"; 
+            String json = "{\"city\":\"" + city + "\",\"cond\":\"" + conditionText.Value + "\",\"temp\":\"" + urlinputbox.Value + "\",\"asthma\":\"" + Asthma.condition + "\"}}"; 
             Storage storage = storageService.InsertJSONDocument(dbName, collectionName, json);
             
             IList<Storage.JSONDocument> jsonDocList = storage.GetJsonDocList();

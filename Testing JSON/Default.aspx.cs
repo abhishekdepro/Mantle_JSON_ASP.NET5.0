@@ -87,12 +87,26 @@ namespace Testing_JSON
                                 }).ToList();
 
                 var humidity = jObj["main"]["humidity"];
+               //code to check if rain node exists in JSON doc.
+                var rainnodecheck = jObj.Property("rain");
+               //routine to typecast if rain is present
+                if (rainnodecheck!=null)
+                {
+                    var rain = jObj["rain"]["1h"];
+                    rainText.Value = rain.ToString();
+                }
+               //disable the rain field.
+                else
+                {
+                    rainText.Value = "No rain";
+
+                }
                 urlinputbox.Value = weather[0].resultquery;
                 weathercondition.Text = "Weather Condition: ";
                 weathercondition.Text += final[2].temp.ToUpper();
                 conditionText.Value = final[2].temp;
                 humidityText.Value = humidity.ToString();
-               /// submiturlbtn.Visible = false;
+               ///submiturlbtn.Visible = false;
                 show();
             }
             catch (Exception ex) {

@@ -56,9 +56,9 @@
             
             <div id="input-collection" class="input-group input-group-lg">
           
-              <input id= "Text2" runat="server" type="text" class="form-control" name = "url" placeholder="Name of city" disabled="disabled">
+              <input id= "rainText" runat="server" type="text" class="form-control" name = "url" placeholder="Name of city">
           <span class="input-group-btn">
-              <asp:button id="btnhumi" runat="server" OnClick="submiturlbtn_clicked" class="btn btn-primary" type="button" Text="cm Rainfall"></asp:button>
+              <asp:button id="btnrain" runat="server" OnClick="submiturlbtn_clicked" class="btn btn-primary" type="button" Text="cm Rainfall"></asp:button>
           </span>
                 
            </div>

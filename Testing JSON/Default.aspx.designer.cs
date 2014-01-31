@@ -58,22 +58,22 @@ namespace Testing_JSON {
         protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
-        /// Text2 control.
+        /// rainText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText rainText;
         
         /// <summary>
-        /// btnhumi control.
+        /// btnrain control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnhumi;
+        protected global::System.Web.UI.WebControls.Button btnrain;
         
         /// <summary>
         /// humidityText control.

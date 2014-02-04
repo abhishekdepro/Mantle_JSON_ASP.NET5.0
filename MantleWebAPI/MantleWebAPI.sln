@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "MantleWebAPI", "MantleWebAPI\MantleWebAPI.ccproj", "{F6B10BE9-5A92-4EB4-9852-4D1A069C46CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRoleMantleAPI", "WebRoleMantleAPI\WebRoleMantleAPI.csproj", "{C6C328B1-8F58-4CEC-A5C4-81173437C9EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6B10BE9-5A92-4EB4-9852-4D1A069C46CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B10BE9-5A92-4EB4-9852-4D1A069C46CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B10BE9-5A92-4EB4-9852-4D1A069C46CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B10BE9-5A92-4EB4-9852-4D1A069C46CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C328B1-8F58-4CEC-A5C4-81173437C9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C328B1-8F58-4CEC-A5C4-81173437C9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C328B1-8F58-4CEC-A5C4-81173437C9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C328B1-8F58-4CEC-A5C4-81173437C9EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
